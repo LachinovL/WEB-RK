@@ -1,0 +1,127 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	font-family: 'Comic Sans MS', sans-serif;
+	font-size: 28px;
+	list-style: none;
+	display: flex;
+	padding: 1em 0;
+	justify-content:space-around;
+}
+a {
+	text-decoration: none;
+}
+.menu {
+	background-color: #BFFF00;
+}
+.result{ 
+	font-family: 'Comic Sans MS', sans-serif;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 36px;
+	width: 100%;
+	background-color: #1164B4;
+	text-align: center;	
+ }
+ .hint{
+ 	animation-name: hint;
+ 	animation-duration: 5s;
+ 	font-size: 36px;
+ 	font-family: 'Comic Sans MS', sans-serif;
+    padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #009B77;
+	text-align: center;
+	
+	animation-fill-mode: forwards;
+ }
+ .osm {
+    position: fixed;
+    top: 650px;
+    left: 1600px;
+    animation: osm 20s ease-in infinite;
+    transform: scaleX(-1);
+}
+
+.fish {
+	position: fixed;
+    top: 730px;
+    left: -200px;
+    animation: fish 10s ease-in infinite;
+    
+}
+.fish2 {
+	position: fixed;
+    top:830px;
+    left:0px;
+    animation: fishh 20s ease-in infinite;
+    transform: scaleX(-1);
+
+}
+.zvz {
+	position: fixed;
+    top: 700px;
+    left: 400px;
+    animation: zvz 6s ease-in infinite;
+    transform: scaleX(-1);
+    
+}
+.kor {
+	position: fixed;
+    top: 470px;
+    left: 0px;
+    
+}
+.kor:hover {
+  animation: kor 10s ease-in infinite;
+
+}
+.more img {
+  width: 100%;
+  
+}
+@keyframes kor {
+    from {
+    left: 0%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes hint {
+    0% {
+     opacity: 0;
+     
+    }
+    50%{
+    	opacity: 1;
+    }
+    100% {
+     opacity: 0;
+     transform: none;
+    }
+}
+@keyframes osm {
+    100% {
+      top : 100vw;
+    }
+}
+
+@keyframes fish {
+    100% {
+      left : 100vw;
+    }
+}
+@keyframes fishh {
+    100% {
+      left: 100vw;
+    }
+}
+@keyframes zvz {
+    100% {
+      top : 100vw;
+    }
+}

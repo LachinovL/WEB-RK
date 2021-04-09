@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Регистрация</title>
+		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+  <header>
+        <div class="header__game-name">Подводный мир</div>
+        <div class="developer">
+			<div class="developer__title">Разработчик</div>
+			<div class ="developer__name">Лачинов Лачин</div>
+			<div class="developer__group-option">Группа 191-362 Вариант 4</div>
+		</div>
+      </header>
+
+      <form action="">
+        <div>
+            <label for="">Имя</label>
+        <input required type="text" id="name" name="user_name" placeholder="Имя">
+        </div>
+        <div>
+            <label for="">Фамилию</label>
+            <input required type="text" id="name" name="user_name" placeholder="Фамилия">
+        </div>
+        <div>
+            <label for="">Отчество</label>
+            <input type="text" id="name" name="user_name" placeholder="Отчество">
+        </div>
+        <div>
+            <label for="">e-mail</label>
+            <input required type="text" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" id="phone" name="user_phone" placeholder="e-mail" title="Пример: l.lachinov@mail.ru">
+        </div>
+        <div>
+            <label for="">Логин</label>
+            <input required type="text" pattern="[ A-Za-z]{6, 100}" id="phone" name="user_phone" placeholder="Логин" title="Логин должен содержать только буквы латинского алфавита в верхнем или нижнем регистре и длиной не менее 6 символов"> 
+        </div>
+        <div>
+            <label for="">Пароль</label>
+            <input required type="text" id="phone" name="user_phone" placeholder="Пароль">
+        </div>
+        <div class="buttons">
+            <button  type="submit" value="Отправить">Зарегистрироваться</button>
+            <button><a href="index.html">Уже есть учетная запись?</a></button>
+        </div>
+      </form>
+	</body>
+</html>
